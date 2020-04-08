@@ -40,7 +40,7 @@ model.add(Dense(224, activation='relu', input_dim=258))
 model.add(Dropout(0.6))
 model.add(Dense(128, activation='relu', kernel_regularizer=regularizers.l2(0.001)))
 model.add(Dense(64, activation='relu', kernel_regularizer=regularizers.l2(0.001)))
-model.add(Dense(8, actication='softmax'))
+model.add(Dense(8, activation='softmax'))
 
 
 model.compile(loss='categorical_crossentropy', optimizer=rmsp, metrics=[mp.f1, 'accuracy'])
